@@ -37,25 +37,55 @@
 
 ```bash
 curl https://api.taotok.io/v1/models -H "Authorization: Bearer $TAOTOK_API_KEY"
+```
+
+```python
 from openai import OpenAI
-client = OpenAI(base_url="https://api.taotok.io/v1", api_key="your-key")
-response = client.chat.completions.create(model="gpt-4o", messages=[{"role":"user","content":"Hello"}])
+
+client = OpenAI(
+    base_url="https://api.taotok.io/v1",
+    api_key="your-taotok-key"
+)
+
+response = client.chat.completions.create(
+    model="gpt-4o",
+    messages=[{"role": "user", "content": "Hello"}]
+)
 print(response.choices[0].message.content)
-Pricing
-Plan	Credits	Price	Best For
-Trial Pack	200	$5	First test
-Starter	1,000	$19	Side projects
-Pro	3,000	$49	Production apps
-Business	9,600	$149	Teams
-Scale	19,960	$499	High volume
+```
+
+---
+
+## Pricing
+
+| Plan | Credits | Price | Best For |
+|------|---------|-------|----------|
+| Trial Pack | 200 | $5 | First test |
+| Starter | 1,000 | $19 | Side projects |
+| Pro | 3,000 | $49 | Production apps |
+| Business | 9,600 | $149 | Teams |
+| Scale | 19,960 | $499 | High volume |
+
 All plans share one credit pool across every model.
 
-How It Works
-Sign up at taotok.io → get one API key
-Top up credits via PayPal or USDT (OKX)
-Call any model with standard OpenAI-compatible endpoints
-Links
-Website: https://taotok.io
-API Docs: https://taotok.io/api
-License
+---
+
+## How It Works
+
+1. Sign up at taotok.io → get one API key
+2. Top up credits via PayPal or USDT (OKX)
+3. Call any model with standard OpenAI-compatible endpoints
+
+---
+
+## Links
+
+- Website: https://taotok.io
+- API Docs: https://taotok.io/api
+
+---
+
+## License
+
 MIT
+
