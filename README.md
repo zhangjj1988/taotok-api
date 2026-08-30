@@ -85,7 +85,13 @@ All plans share one credit pool across every model.
 
 ---
 
+## Community
+
+- **Site & signup:** https://taotok.io
+- **Discord:** https://discord.gg/eEsTYXpZJn — small, low-signal group for API builders and crypto-native devs. No spam, no recruiting.
+
+---
+
 ## License
 
 MIT
-
