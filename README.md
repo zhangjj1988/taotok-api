@@ -78,6 +78,28 @@ All plans share one credit pool across every model.
 
 ---
 
+## Why crypto-native?
+
+taotok-api is built so that **access comes before paperwork**. Instead of
+attaching a credit card and passing a KYC step, the account balance is topped up
+and settled in **USDT** — a stablecoin used here purely as a *payment method*,
+the same role a card would play.
+
+What that means in practice:
+
+- **No credit card required.** Useful if international cards are hard to get,
+  get declined for cross-border SaaS, or you simply don't want one attached.
+- **No KYC document upload.** Your API key is your account — there's no separate
+  identity-verification gate before your first request.
+- **One key, many models.** The same key hits the unified
+  `/v1/chat/completions` endpoint and routes to GPT-4o, Claude, Gemini, and
+  DeepSeek.
+
+USDT is a payment rail here, not an asset to hold — there is no staking, no
+return, and no "earn" mechanic. You pay for tokens; you get tokens.
+
+---
+
 ## Links
 
 - Website: https://taotok.io
@@ -88,7 +110,7 @@ All plans share one credit pool across every model.
 ## Community
 
 - **Site & signup:** https://taotok.io
-- **Discord:** https://discord.gg/eEsTYXpZJn — small, low-signal group for API builders and crypto-native devs. No spam, no recruiting.
+- **Discord:** https://discord.gg/eEsTYXpJn — small, low-signal group for API builders and crypto-native devs. No spam, no recruiting.
 
 ---
 
