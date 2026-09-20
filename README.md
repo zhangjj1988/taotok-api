@@ -110,7 +110,7 @@ return, and no "earn" mechanic. You pay for tokens; you get tokens.
 ## Community
 
 - **Site & signup:** https://taotok.io
-- **Discord:** https://discord.gg/eEsTYXpJn — small, low-signal group for API builders and crypto-native devs. No spam, no recruiting.
+- **Discord:** https://discord.gg/eEsTYXpZJn — small, low-signal group for API builders and crypto-native devs. No spam, no recruiting.
 
 ---
 
