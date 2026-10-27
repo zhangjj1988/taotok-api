@@ -1,8 +1,8 @@
 # taotok API
 
-> One credit pool. 15+ models. Pay with PayPal or USDT. No credit card required.
+> One credit pool. Multiple models. Pay with PayPal or USDT. No credit card required.
 
-**Live:** https://taotok.io | **Docs:** https://taotok.io/api
+**Live:** https://taotok.io | **Quickstart:** https://api.taotok.io/go/gh01
 
 ---
 
@@ -13,46 +13,39 @@
 | Tracking multiple API keys | One key per provider | **One key, all models** |
 | Complex billing | Per-token math | **Simple credits** |
 | Stripe required | Credit card only | **PayPal + USDT (OKX)** |
-| Missing models | Limited selection | **GPT-4o, Claude 3.5, Gemini 1.5, DeepSeek V3 & more** |
+| Missing models | Limited selection | **GPT-4o, Claude Sonnet 4, Gemini 2.0 Flash, Kimi K2 & more** |
 
 ---
 
 ## Supported Models
 
-**Text**
+Every model below is reachable with the same API key and the same
+OpenAI-compatible endpoint. These are the exact strings to pass in the `model`
+field:
 
-- GPT-4o, GPT-4o-mini, GPT-4-turbo
-- Claude 3.5 Sonnet, Claude 3 Opus, Claude 3 Haiku
-- Gemini 1.5 Pro, Gemini 1.5 Flash
-- DeepSeek-V3, DeepSeek-R1, DeepSeek-V4
+| Vendor | Model ID |
+|--------|----------|
+| OpenAI | `gpt-4o` |
+| Anthropic | `claude-sonnet-4-20250514` |
+| Google | `gemini-2.0-flash` |
+| DeepSeek | `deepseek-chat`, `deepseek-v4-flash`, `deepseek-v4-pro` |
+| Moonshot | `kimi-k2` |
 
-**Image & Video**
-
-- DALL-E 3, Midjourney, Imagen 3
-- Sora 2
-
----
-
-## Quick Start
+For the full list of what is currently routed, call:
 
 ```bash
 curl https://api.taotok.io/v1/models -H "Authorization: Bearer $TAOTOK_API_KEY"
 ```
 
-```python
-from openai import OpenAI
+---
 
-client = OpenAI(
-    base_url="https://api.taotok.io/v1",
-    api_key="your-taotok-key"
-)
+## Quick Start
 
-response = client.chat.completions.create(
-    model="gpt-4o",
-    messages=[{"role": "user", "content": "Hello"}]
-)
-print(response.choices[0].message.content)
-```
+1. Sign up at [taotok.io](https://api.taotok.io/register) — your API key is created automatically.
+2. Make your first call: copy-paste snippets for curl, Python or Node at the **[Quickstart](https://api.taotok.io/go/gh01)** (~5 minutes, includes a 401/429 checklist).
+3. Point any OpenAI-compatible SDK at `https://api.taotok.io/v1` and swap the model name.
+
+**Availability:** Taotok does not serve mainland China. Availability varies by region — please make sure your use complies with local law and our terms.
 
 ---
 
@@ -103,7 +96,7 @@ return, and no "earn" mechanic. You pay for tokens; you get tokens.
 ## Links
 
 - Website: https://taotok.io
-- API Docs: https://taotok.io/api
+- Quickstart: https://api.taotok.io/go/gh01
 
 ---
 
